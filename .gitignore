@@ -3,3 +3,5 @@
 ################################################################################
 
 /test.console/test.console/bin/Debug/net6.0
+/test.console/test.console/obj
+*.suo
