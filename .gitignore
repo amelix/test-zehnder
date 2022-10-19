@@ -2,8 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/test.console/test.console/bin
-/test.console/test.console/obj
+*/bin
+*/obj
 /test.console/.vs
 *.suo
 *.user
+/test.console/*/bin
+/test.console/*/obj
