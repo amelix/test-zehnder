@@ -2,3 +2,4 @@
 Console.WriteLine("Hello, World!");
 
 WebApplication1.Program.v(args);
+BlazorWebServer.Program.InitBlazorServer(args);

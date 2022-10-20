@@ -18,9 +18,12 @@ namespace WebApplication1
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            
             var app = builder.Build();
-
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+            {
+                app.Urls.Add("http://*:8080");
+            }
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

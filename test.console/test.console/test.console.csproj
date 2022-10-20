@@ -11,5 +11,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\WebApplication1\WebApplication1.csproj" />
+		<ProjectReference Include="..\BlazorWebServer\BlazorWebServer.csproj" />
+
 	</ItemGroup>
 </Project>
