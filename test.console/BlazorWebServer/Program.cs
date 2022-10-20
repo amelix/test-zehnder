@@ -1,12 +1,4 @@
 using BlazorWebServer.Data;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using System.Runtime.InteropServices;
-
-
-
-
-using static System.Net.Mime.MediaTypeNames;
 using System.Runtime.InteropServices;
 
 namespace BlazorWebServer
@@ -22,6 +14,7 @@ namespace BlazorWebServer
         public static void InitBlazorServer(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            Console.WriteLine("Starting Blazor Web Server...");
 
             // Add services to the container.
             builder.Services.AddRazorPages();
@@ -43,7 +36,7 @@ namespace BlazorWebServer
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseStaticFiles();
 

@@ -1,3 +1,6 @@
+using static System.Net.Mime.MediaTypeNames;
+using System.Runtime.InteropServices;
+
 namespace WebApplication1
 {
     public class Program
